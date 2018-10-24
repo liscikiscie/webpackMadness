@@ -15,7 +15,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        present: [ [ 'env', {
+                        presets: [ [ 'env', {
                             targets: {
                                 browsers: [ '> 1%', 'last 2 versions' ] //https://github.com/browserslist/browserslist#queries
                             }
