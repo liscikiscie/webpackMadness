@@ -1,1 +1,2 @@
-Webpack 4 for static page configuration
+Webpack 4 starter kit
+basic Webpack 4 configuration 
