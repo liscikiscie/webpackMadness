@@ -27,15 +27,11 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: [ [ 'env', {
-                            targets: {
-                                browsers: [ '> 1%', 'last 2 versions' ] //https://github.com/browserslist/browserslist#queries
-                            }
-                        } ] ]
+                        presets: ['@babel/preset-env']
                     }
                 }
             },
